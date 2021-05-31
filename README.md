@@ -5,4 +5,4 @@
 
 ![Pahal (5)](https://user-images.githubusercontent.com/56028094/120161278-bf53b280-c214-11eb-86dd-f936e2a8160e.png)
 
-[![video](https://img.youtube.com/vi/kpaWAo9LGSw/0.jpg)](https://www.youtube.com/watch?v=kpaWAo9LGSw)
+<a href="https://youtu.be/kpaWAo9LGSw" title="video text"><img src="path/to/img.png" width="500" height="500"></a>
