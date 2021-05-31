@@ -1,0 +1,151 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0%;
+  right: 0%;
+  z-index: 9;
+  vertical-align: middle;
+}
+
+/* Add styles to the form container */
+.form-container {
+  min-height: fit-content;
+  max-height: 80vh;
+  overflow-y: scroll;
+  z-index: 10;
+  width: 60%;
+  padding: 20px 100px;
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 16px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input,  .form-container select,  .form-container textarea,  .form-container datalist{
+  width: 70%;
+  height: 25px;
+  color: #a6a6a6;
+  /* border: 1px solid #ff6d2a; */
+  background: white;
+  border-radius: 4px;
+  border-width: 0.5px;
+  /* box-shadow: 4px 4px 8px grey; */
+  padding: 15px 10px;
+  /* margin: 5px 0 22px 0; */
+  border-top: black;
+  border-left: white;
+  border-right: white;
+  
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,  .form-container input:focus,  .form-container select:focus,  .form-container textarea:focus,  .form-container datalist:focus {
+  /* background-color: #ddd; */
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #ff6d2a;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  margin-bottom:10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  border-radius: 10px;
+
+}
+
+
+.ash-select{
+  line-height: 25px;
+  float: right;
+}
+
+.ash-input{
+  line-height: 25px;
+  float: right;
+}
+
+.ash-label{
+  line-height: 25px;
+}
+
+.ash-datalist{
+  line-height: 25px;
+  float: right;
+}
+
+.ash-textarea{
+  line-height: 25px;
+  float: right;
+}
+
+::placeholder { 
+  color: #bfbfbf;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-color: green !important;
+  background-image: none !important;
+  color: -internal-light-dark(black, white) !important;
+}
+
+select.selector option {
+  color: red;
+}
+
+#msform input, #msform textarea, #msform select, #msform datalist {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+/*
+b, strong {
+  font-weight: larger;
+  color: rgb(255,255,255,0.7);
+}
+*/

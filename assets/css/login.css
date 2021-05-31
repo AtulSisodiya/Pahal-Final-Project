@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url("../img/aditya-saxena-_mIXHvl_wzA-unsplash.jpg") center right!important;*/
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    /*background: #000;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Helvetica";
+    font-weight: 400;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+h1 {
+    /* font-weight: bold; */
+    margin: 5px;
+    font-family: "Pacifico", sans-serif;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+    transition: font-size 100ms ease;
+}
+a:link {
+    text-decoration: none;
+}
+button a:hover{
+    font-size: 15px;
+    color: #fff;
+}
+p {
+    color: rgb(255,255,255);
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #ff6d2a;
+    background-color: #ff6d2a;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost#signIn, button.ghost#signUp {
+    background-color: white;
+    /* border-color: #FFFFFF; */
+    color: #ff6d2a;
+}
+
+form {
+    background-color: #ffffff65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 5px 0;
+    width: 100%;
+    outline: none;
+}
+
+.container {
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 560px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: #ff6d2a;
+    background: -webkit-linear-gradient(to right, #ff6d2a, #ff6d2a);
+    background: linear-gradient(to right, #ff6d2a, #ff6d2a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #ff6d2a;
+    text-decoration: none;
+}
+
+.dropdown ul {
+    display: block;
+    position: absolute;
+    width: max-content;
+    right: 100%;
+    /* top: calc(150% - 30px); */
+    margin: -12px 0;
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.7s;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .dropdown ul li {
+    list-style-type: none;
+  }
+  
+  .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 8px;
+    text-transform: none;
+    color: white;
+    font-weight: 100;
+  }
+  
+  .dropdown ul a:hover, .dropdown ul .active:hover, .dropdown ul li:hover > a {
+    color: whitesmoke;
+  }
+  
+  .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+  .dropdown .dropdown ul {
+    top: 0;
+    /* left: calc(100% - 30px); */
+    visibility: hidden;
+  }
+  
+  .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+
+
+.zoom2{
+    color: #23527c;
+}
+
+.zoom2:hover{
+    color: #ff6d2a;
+}

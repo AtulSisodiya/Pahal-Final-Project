@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin-ext,latin);
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
+
+body {
+  /*background: #E9F0F4;
+  background: #bdc3c7;  /* fallback for old browsers 
+background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Open Sans", sans-serif;
+ /* background: #F9973B;
+background: -webkit-radial-gradient(top right, #F9973B, #FFCD60);
+background: -moz-radial-gradient(top right, #F9973B, #FFCD60);
+background: radial-gradient(to bottom left, #F9973B, #FFCD60);*/
+
+
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #ff743471 0%, #d2ccc4 74%);
+  background-size: cover;
+}
+
+.newPost {
+  margin: 0 auto 0 18%;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 82%;
+  /* min-width: 480px; */
+  /* background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  background: #FFF;*/
+  font-family: "Asap", sans-serif;
+}
+.newPost h3, .newpost h2 {
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+  float: left;
+  font-family: "Pacifico", sans-serif;
+  color: #412e2e;
+}
+
+.newpost h2 {
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+  float: left;
+  font-family: "Pacifico", sans-serif;
+  color: #412e2e;
+}
+
+.newPost input[type=text] {
+  padding-left: 15px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px #8d8d8d;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+.newPost .toolbar {
+  background: #2E3641;
+}
+
+.newPost .toolbar button {
+  float: left;
+  width: 45px;
+  height: 45px;
+  background: #2E3641;
+  opacity: 1;
+  border: none;
+  border-right: 1px solid #434f5f;
+  color: #C1CFD9;
+  outline: none;
+}
+.newPost .toolbar button:hover {
+  background: #394250;
+  opacity: 0.6;
+  color: #b1c3cf;
+}
+.newPost .toolbar .customSelect {
+  float: right;
+  position: relative;
+}
+.newPost .toolbar .customSelect select {
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  background: #2E3641;
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 25px;
+  color: #C1CFD9;
+  border-left: 1px solid #434f5f;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.newPost .toolbar .customSelect select:hover {
+  background: #394250;
+  color: #b1c3cf;
+}
+.newPost .toolbar .customSelect:after {
+  content: "";
+  font-family: FontAwesome;
+  color: #C1CFD9;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.newPost .toolbar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.newPost .editor {
+  background-color: white;
+  min-height: 300px;
+  width: 100%;
+  resize: none;
+  /*border: 3px solid #0b0c0c;*/
+  box-shadow: 5px 5px 10px #4b4b4b;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.newPost .editor .saved {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #C1CFD9;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+}
+.newPost .buttons {
+  float: right;
+}
+.newPost .buttons button {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 35px 10px 35px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #ff4a17;
+  border: 2px solid #ff4a17;
+}
+
+.newPost .buttons button:active {
+  box-shadow: inset 0px 4px rgba(104, 98, 98, 0.05);
+}
+.newPost .buttons button:hover {
+  border-color: #fff;
+  /* background: rgba(255, 255, 255, 0.1); */
+  /*background: #2E3641;
+  cursor: pointer;*/
+}
+.newPost .buttons:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.newPost:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.new{
+  background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+box-shadow: black;
+}
+
+#clr{
+  background: rgb(217, 233, 248);
+  border: 2px solid #1d1a19;
+  color: black;
+}
+
+#clr:hover{
+  border-color: #fff;
+  /* color:white; */
+  /* background: rgba(255, 255, 255, 0.1); */
+}
+
+@media (max-width: 1440px) {
+	.newPost {
+    margin: 40px auto;
+  }
+
+  }
+
+
+.top{
+  display: inline-block;
+  width: 85%;
+}
+
+.top-right{
+  float: right;
+}
+
+.top-left{
+  float: left;
+}
+
+.avatar-upload {
+  left: 88%;
+  position: relative;
+  max-width: 205px;
+  /*margin: 50px auto;*/
+}
+.avatar-upload .avatar-edit {
+  margin: 6% 0 0 61%;
+  position: absolute;
+  /*right: 12px;
+  z-index: 1;
+  top: 10px;*/
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: 'FontAwesome';
+  color: #757575;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  margin-top: 12.5%;
+  width: 145px;
+  height: 115px;
+  position: absolute;
+  border-radius: 0%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}

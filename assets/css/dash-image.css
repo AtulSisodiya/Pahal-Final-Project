@@ -1,0 +1,77 @@
+body {
+  background-color: #efefef;
+}
+
+.profile-pic {
+    max-width: 64px;
+    max-height: 64px;
+    display: block;
+}
+
+.file-upload , .file-upload2{
+    display: none!important;
+}
+.circle { 
+    border-radius: 1000px !important;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 0;
+    width: 34px!important;
+    height: 34px!important;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    position: unset;
+    top: 72px;
+    padding: 15px;
+    background-image: url(../img/user.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.circle:hover {
+  background: white;
+  opacity: 1;
+  padding: 0;
+}
+
+.circle:hover > .p-image {
+  visibility: visible;
+  color: #ff0000;
+  opacity: 1;
+}
+
+.user-dp i {
+  width: 48px!important;
+  height: 48px!important;
+  margin-left: 8px;
+  /*margin-top: 8px;*/
+}
+
+.user em {
+  color: #fff;
+  font-weight: bold;
+}
+
+img {
+    max-width: 64px;
+    height: auto;
+}
+.p-image {
+  position: unset;
+  top: 167px;
+  right: 30px;
+  color: #fff;
+  visibility: hidden;
+  margin-top: 0px;
+  /*transition: all .3s cubic-bezier(.175, .885, .32, 1.275);*/
+}
+/*.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999
+}*/
