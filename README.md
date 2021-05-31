@@ -18,4 +18,4 @@ Worked on this project with my team Code Smasher for IBM Innovation Camp.
 <h3>Click on Image to Know more</h3>
 <a href="https://youtu.be/kpaWAo9LGSw" title="video text"><img src="https://user-images.githubusercontent.com/56028094/120161275-bebb1c00-c214-11eb-8b66-db8f1316d772.png"></a>
 <h3>Link to website<h3>
-<a href="https://pahal-empowwer-women.000webhostapp.com/Pahal-The-Platform-main/index.php">Pahal.com</a>  
+<a href="https://pahal-empowwer-women.000webhostapp.com/Pahal-The-Platform-main/index.php">Pahal.in</a>  
